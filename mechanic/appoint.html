@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <h1>MECHANIC</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admin.php">Admin</a></li>
+        <li><a href="appoint.html">Appointment</a></li>
+        <li><a href="contact.html">Contact Us!</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <form action="insert.php" method="POST">
+      <div class="conv">
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" name="username" required /></td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td><input type="textarea" name="address" required /></td>
+          </tr>
+          <tr>
+            <td>Phone:</td>
+            <td><input type="tel" name="phonenumber" required /></td>
+          </tr>
+          <tr>
+            <td>Car License Number:</td>
+            <td><input type="number" name="licensenumber" required /></td>
+          </tr>
+          <tr>
+            <td>Appointment Date:</td>
+            <td><input type="date" name="date" required /></td>
+          </tr>
+          <tr>
+            <td>Select your desired mechanic</td>
+            <td>
+              <input type="radio" name="mechanic" value="1" />Mechanic 1
+              <input type="radio" name="mechanic" value="2" />Mechanic 2
+              <input type="radio" name="mechanic" value="3" />Mechanic 3
+              <input type="radio" name="mechanic" value="4" />Mechanic 4
+              <input type="radio" name="mechanic" value="5" />Mechanic 5
+            </td>
+          </tr>
+          <tr></tr>
+        </table>
+        <td><button class="submit">Submit</button></td>
+      </div>
+    </form>
+  </body>
+</html>
